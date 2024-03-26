@@ -15,7 +15,7 @@
 #-author-name: Kensaku Yoza
 #-maintainer-name: Kensaku Yoza
 #-maintainer-email: kanjibrailles@gmail.com
-# Copyright (C) 2022, Kensaku Yoza
+# Copyright (C) 2024, Kensaku Yoza
 # Created by Kensaku Yoza <kanjibrailles@gmail.com>
 
 # This file is part of liblouis.
@@ -37,6 +37,37 @@
 # This table mainly conforms to the rules of "Hasegawa Rokuten Kanji", and
 # partly to the Braille Authority of Japan's standard Japanese
 # braille. 
+
+----- following need edit
+On reading and Kun reading
+Each Japanese Kanji usually has at least two readings, Japanese origin reading and Chinese origin reading. Japanese origin reading is called Kun Yomi and Chinese origin reading is called On Yomi.
+A Kanji is used alone as a word, or is used with other Kanji as a Kanji compound which is called 
+音読み・訓読みはそのままonyomi, kunyomiと言いますが、それぞれ何なのか丁寧に説明すると以下のようになります。
+★Kanji have two different readings, onyomi and kunyomi.
+（漢字には２つの異なる読み方があります、音読みと訓読みです。）
+★The onyomi is close to the Chinese language and the kunyomi is used to express the traditional Japanese language.
+（音読みは中国語に近く、訓読みは日本の伝統的な言葉を表現するのに使われています。）
+**六点漢字** (Rokuten Kanji) refers to a system of representing **Chinese characters (kanji)** using a unique set of **six dots**. This system was created in **1972** by Mr. **Hasegawa Sadao**, a former teacher at the Tsukuba Attached School for the Blind. The primary purpose of Rokuten Kanji is to allow blind individuals who use braille to write and read Chinese characters.
+
+Here are some key points about Rokuten Kanji:
+
+1. **Dot Configuration**: Each Rokuten Kanji character consists of six dots arranged in a specific pattern. These dots convey information about the character's meaning and pronunciation.
+
+2. **Preceding Symbol**: To indicate that a character is a Chinese character (kanji), a **preceding symbol** is necessary. This symbol serves as a prefix to the six dots and signifies that the following dots represent a kanji character.
+
+3. **Compact Representation**: Unlike traditional braille, which uses eight dots, Rokuten Kanji uses only six dots. This compact representation allows for efficient writing and reading of Chinese characters.
+
+4. **Reading and Composing Characters**: Rokuten Kanji characters are composed of three to four cells (braille spaces). The dots within each cell convey specific information related to the character. By understanding the dot patterns, blind individuals can read and write Chinese characters effectively.
+
+5. **Not Widely Adopted**: Although Rokuten Kanji provides an innovative way to represent Chinese characters, it is not widely adopted in blind education due to the lack of official recognition by the Japan Braille Committee. However, it remains a valuable tool for those who wish to explore Chinese characters beyond the limitations of standard braille.
+
+In summary, Rokuten Kanji is a fascinating system that bridges the gap between braille and Chinese characters, allowing blind individuals to engage with the rich world of kanji. 🇯🇵🔣
+Forms of Kanji --- Bushu (Radical)
+Kanji represent forms of something or situation and each of them represent meaning.
+Above Kanji are clear examples however, many Kanji require some explanation to understand why they are in such forms.
+Most Kanji consist of several parts. Such parts are called Bushu (Radical).
+Some independent Kanji make appearance as Bushu of other Kanji, but in most cases Bushu appear only 
+---------
 
 # Japanese standard braille is the braille script of the Japanese
 # language, but not necessarily to Japanese "written" language.

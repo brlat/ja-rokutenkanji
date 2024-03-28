@@ -70,7 +70,7 @@
 
 # Start translation rules
 
-#begin space
+# begin space
 space \x3000 0 zenkaku(full width) space
 space \x0020 0 blank
 space \x0009 9 tab
@@ -91,9 +91,9 @@ space \x2008 0
 space \x2009 0  
 space \x200a 0  
 space \x200b 0  
-#end space
+# end space
 
-#begin numbers
+# begin numbers
 numsign 3456
 
 # Hankaku numbers
@@ -140,7 +140,7 @@ litdigit ７ 1245
 litdigit ８ 125
 litdigit ９ 24
 
-# numbers related
+# numbers related rules
 after digit always 1 0-1
 after digit always 2 0-12
 after digit always 3 0-14
@@ -161,9 +161,9 @@ after digit always レ 0-253-1245
 after digit always リ 0-253-125
 after digit always オ 0-253-24
 after digit always ロ 0-253-245
-#end numbers
+# end numbers
 
-#begin alphabet
+# begin alphabet
 capsletter 56-6
 begcapsword 56-6-6
 endcapsword 6-3
@@ -248,9 +248,9 @@ lowercase \x02c5 46-124 φ Phi
 lowercase \x02c3 46-12346 χ Chi
 lowercase \x02c6 46-13456 ψ Psi
 lowercase \x02c9 46-2456 ω Omega
-#end alphabet
+# end alphabet
 
-#begin Hankaku(half width) punctuations and symbols
+# begin Hankaku(half width) punctuations and symbols
 punctuation ! 253-0
 sign " 56-23
 sign # 56-146
@@ -618,9 +618,9 @@ base uppercase \x00db \x00fb Ûû
 base uppercase \x00dc \x00fc Üü
 base uppercase \x00de \x00fe Þþ
 base uppercase \x00dd \x00fd Ýý
-#end Hankaku(half width) punctuations and symbols
+# end Hankaku(half width) punctuations and symbols
 
-#begin Zenkaku(full width) punctuations and symbols
+# begin Zenkaku(full width) punctuations and symbols
 punctuation 、 56-0
 punctuation 。 256-0
 punctuation … 0-2-2-2-0
@@ -818,9 +818,9 @@ sign ‘ 3
 sign ’ 3
 sign ※ 35-35-0
 sign ♪ 5-2536-24-536-6-1436-2536-2
-#end Zenkaku(full width) punctuations and symbols
+# end Zenkaku(full width) punctuations and symbols
 
-#begin Hiragana
+# begin Hiragana
 # SeiOn and dakuOn (basic characters)
 sign あ 1 a
 sign い 12 i
@@ -948,9 +948,9 @@ always みょ 4-24536 myo
 always りゃ 4-15 rya
 always りゅ 4-145 ryu
 always りょ 4-245 ryo
-#end Hiragana
+# end Hiragana
 
-#begin Katakana
+# begin Katakana
 # SeiOn and dakuOn (basic characters)
 sign ア 1 a
 sign イ 12 i
@@ -1099,7 +1099,7 @@ always ミョ 4-24536
 always リャ 4-15
 always リュ 4-145
 always リョ 4-245
-#end Katakana
+# end Katakana
 
 # begin Kanji
 sign 亜 6-1-12
@@ -7678,7 +7678,7 @@ sign ⿒ 235-15-134-136 # 齒
 sign ⿓ 235-6-145-135 # 龍
 sign ⿔ 235-1245-126-123456 # 龜
 sign ⿕ 235-145-34-34 # 龠
-# enn Kangxi Radicals
+# end Kangxi Radicals
 
 # begin CJK Unified Ideographs
 sign 豈 235-125-2-1356 # 豈
@@ -8093,11 +8093,12 @@ sign 響 46-126-1236 # 響
 sign 頻 456-1236-15 # 頻
 sign 龜 235-1245-126-123456 # 龜
 # end CJK Unified Ideographs
-#begin character class rules
+
+# begin character class rules
 attribute katakana アイウエオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモヤユヨラリルレロヮワヰヱヲンヴーヵヶァィゥェォャュョ
 attribute hiragana あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらいるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽっ
 
-#begin Katakana rules
+# begin Katakana rules
 # Katakana characters are indicated with Katakana opening dots6-36 and closing dots23.
 # Some Katakana combinations cannot be properly indicated.
 # For example, after small Katakana "ァィゥェオャュョ"
@@ -8334,4 +8335,4 @@ noback context `[]%katakana @6-36
 noback context %katakana[]~ @23
 noback context %katakana[]!%katakana @23
 noback context !%katakana[]%katakana @6-36
-#end Katakana rules
+# end Katakana rules

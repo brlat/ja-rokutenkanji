@@ -1,4 +1,4 @@
-# Tests for Japanese Rokuten Kanji (Six-dot Kanji)
+# Tests for Japanese Rokuten Kanji (6 dot braille kanji)
 # see also https://github.com/code4sabae/tenji/blob/master/README.md
 #
 display: unicode-without-blank.dis
@@ -11,7 +11,7 @@ table:
 tests:
 
 # Kanji tests
-- [亜, ⠠⠁⠃]
+  - [亜, ⠠⠁⠃]
   - [唖, ⠠⠁⠚]
   - [娃, ⠠⠁⠊]
   - [阿, ⠠⠁⠍]

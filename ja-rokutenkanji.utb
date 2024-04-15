@@ -950,7 +950,7 @@ always りゅ 4-145 ryu
 always りょ 4-245 ryo
 # end Hiragana
 
-# begin Katakana
+# begin Zenkaku Katakana
 # SeiOn and dakuOn (basic characters)
 sign ア 1 a
 sign イ 12 i
@@ -1099,7 +1099,157 @@ always ミョ 4-24536
 always リャ 4-15
 always リュ 4-145
 always リョ 4-245
-# end Katakana
+# end Zenkaku Katakana
+
+# begin Hankaku Katakana
+# SeiOn and dakuOn (basic characters)
+sign ｱ 1 a
+sign ｲ 12 i
+sign ｳ 14 u
+sign ｴ 124 e
+sign ｵ 24 o
+sign ｰ 25 (prolong sound)
+#sign ｳﾞ 5-14 vu
+sign ｶ 16 ka
+sign ｷ 126 ki
+sign ｸ 146 ku
+sign ｹ 1246 ke
+sign ｺ 246 ko
+#sign ｶﾞ 5-16 ga
+#sign ｷﾞ 5-126 gi
+#sign ｸﾞ 5-146 gu
+#sign ｹﾞ 5-1246 ge
+#sign ｺﾞ 5-246 go
+sign ｻ 156 sa
+sign ｼ 1256 shi
+sign ｽ 1456 su
+sign ｾ 12456 se
+sign ｿ 2456 so
+#sign ｻﾞ 5-156 za
+#sign ｼﾞ 5-1256 ji
+#sign ｽﾞ 5-1456 zu
+#sign ｾﾞ 5-12456 ze
+#sign ｿﾞ 5-2456 zo
+sign ﾀ 153 ta
+sign ﾁ 1253 3hi
+sign ﾂ 1453 tsu
+sign ﾃ 12453 te
+sign ﾄ 2453 to
+#sign ﾀﾞ 5-153 da
+#sign ﾁﾞ 5-1253 ji
+#sign ﾂﾞ 5-1453 zu
+#sign ﾃﾞ 5-12453 de
+#sign ﾄﾞ 5-2453 do
+sign ﾅ 13 na
+sign ﾆ 123 ni
+sign ﾇ 143 nu
+sign ﾈ 1243 ne
+sign ﾉ 243 no
+sign ﾊ 136 ha
+sign ﾋ 1236 hi
+sign ﾌ 1436 hu
+sign ﾍ 12436 he
+sign ﾎ 2436 ho
+#sign ﾊﾞ 5-136 ba
+#sign ﾋﾞ 5-1236 bi
+#sign ﾌﾞ 5-1436 bu
+#sign ﾍﾞ 5-12436 be
+#sign ﾎﾞ 5-2436 bo
+#sign ﾊﾟ 6-136 pa
+#sign ﾋﾟ 6-1236 pi
+#sign ﾌﾟ 6-1436 pu
+#sign ﾍﾟ 6-12436 pe
+#sign ﾎﾟ 6-2436 po
+sign ﾏ 1536 ma
+sign ﾐ 12536 mi
+sign ﾑ 14536 mu
+sign ﾒ 124536 me
+sign ﾓ 24536 mo
+sign ﾔ 43 ya
+sign ﾕ 436 yu
+sign ﾖ 453 yo
+sign ﾗ 15 ra
+sign ﾘ 125 ri
+sign ﾙ 145 ru
+sign ﾚ 1245 re
+sign ﾛ 245 ro
+sign ﾜ 3 wa
+sign ｦ 53 wo
+sign ﾝ 536 n
+
+# small Katakana characters
+sign ｧ 45-1 small a
+sign ｨ 45-12 small i
+sign ｩ 45-14 small u
+sign ｪ 45-124 small e
+sign ｫ 45-24 small o
+sign ｯ 2 small tsu
+sign ｬ 45-43 small ya
+sign ｭ 45-436 small yu
+sign ｮ 45-453 small yo
+
+# Yoon (contracted sound)
+always ｳｨ 26-12
+always ｳｪ 26-124
+always ｳｫ 26-24
+always ｳﾞｧ 256-136
+always ｳﾞｨ 256-1236
+always ｳﾞｪ 256-12436
+always ｳﾞｫ 256-2436
+always ｷｬ 4-16
+always ｷｭ 4-146
+always ｷｮ 4-246
+always ｷﾞｬ 45-16
+always ｷﾞｭ 45-146
+always ｷﾞｮ 45-246
+always ｼｬ 4-156
+always ｼｭ 4-1456
+always ｼｮ 4-2456
+always ｽｨ 4-1256
+always ｼｪ 4-12456
+always ｼﾞｬ 45-156
+always ｼﾞｭ 45-1456
+always ｼﾞｮ 45-2456
+always ｽﾞｨ 45-1256
+always ｼﾞｪ 45-12456
+always ﾁｬ 4-153
+always ﾁｭ 4-1453
+always ﾁｮ 4-2453
+always ﾁｪ 4-12453
+always ﾂｧ 26-153
+always ﾂｨ 26-1253
+always ﾂｪ 26-12453
+always ﾂｫ 26-2453
+always ﾃｨ 4-1253
+always ﾃｭ 46-1453
+always ﾄｩ 26-1453
+always ﾃﾞｨ 45-1253
+always ﾃﾞｭ 456-1453
+always ﾄﾞｩ 256-1453
+always ﾆｬ 4-13
+always ﾆｭ 4-143
+always ﾆｮ 4-243
+always ﾋｬ 4-136
+always ﾋｭ 4-1436
+always ﾋｮ 4-2436
+always ﾋﾞｬ 45-136
+always ﾋﾞｭ 45-1436
+always ﾋﾞｮ 45-2436
+always ﾋﾟｬ 46-136
+always ﾋﾟｭ 46-1436
+always ﾋﾟｮ 46-2436
+always ﾌｧ 26-136
+always ﾌｨ 26-1236
+always ﾌｪ 26-12436
+always ﾌｫ 26-2436
+always ﾐｬ 4-1536
+always ﾐｭ 4-14536
+always ﾐｮ 4-24536
+always ﾘｬ 4-15
+always ﾘｭ 4-145
+always ﾘｮ 4-245
+# end Hankaku Katakana
+
 
 # begin Kanji
 sign 亜 6-1-12
@@ -8096,9 +8246,10 @@ sign 龜 235-1245-126-123456 # 龜
 
 # begin character class rules
 attribute katakana アイウエオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモヤユヨラリルレロヮワヰヱヲンヴーヵヶァィゥェォャュョ
+attribute hankakukatakana ｱｲｳｴｵｶｶﾞｷｷﾞｸｸﾞｹｹﾞｺｺﾞｻｻﾞｼｼﾞｽｽﾞｾｾﾞｿｿﾞﾀﾀﾞﾁﾁﾞｯﾂﾂﾞﾃﾃﾞﾄﾄﾞﾅﾆﾇﾈﾉﾊﾊﾞﾊﾟﾋﾋﾞﾋﾟﾌﾌﾞﾌﾟﾍﾍﾞﾍﾟﾎﾎﾞﾎﾟﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛヮﾜヰヱｦﾝｳﾞｰヵヶｧｨｩｪｫｬｭｮ
 attribute hiragana あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらいるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽっ
 
-# begin Katakana rules
+# begin Zenkaku Katakana rules
 # Katakana characters are indicated with Katakana opening dots6-36 and closing dots23.
 # Some Katakana combinations cannot be properly indicated.
 # For example, after small Katakana "ァィゥェオャュョ"
@@ -8335,4 +8486,242 @@ noback context `[]%katakana @6-36
 noback context %katakana[]~ @23
 noback context %katakana[]!%katakana @23
 noback context !%katakana[]%katakana @6-36
-# end Katakana rules
+# end Zenkaku Katakana rules
+# begin Hankaku Katakana rules
+# Hankaku Katakana characters are indicated with Katakana opening dots6-36-46 and closing dots23.
+# Some Katakana combinations cannot be properly indicated.
+# For example, after small Katakana "ｧｨｩｪｵｬｭｮ"
+# because they are defined with "always".
+noback context `["ｰ"]%space @6-36-46-25-23
+noback context `["ｰ"]%hiragana @6-36-46-25-23
+
+noback context `["ｱ"]%space @6-36-46-1-23
+noback context `["ｲ"]%space @6-36-46-12-23
+noback context `["ｳ"]%space @6-36-46-14-23
+noback context `["ｴ"]%space @6-36-46-124-23
+noback context `["ｵ"]%space @6-36-46-24-23
+noback context `["ｶ"]%space @6-36-46-16-23
+noback context `["ｷ"]%space @6-36-46-126-23
+noback context `["ｸ"]%space @6-36-46-146-23
+noback context `["ｹ"]%space @6-36-46-12468-23
+noback context `["ｺ"]%space @6-36-46-246-23
+noback context `["ｶﾞ"]%space @6-36-46-5-16-23
+noback context `["ｷﾞ"]%space @6-36-46-5-126-23
+noback context `["ｸﾞ"]%space @6-36-46-5-146-23
+noback context `["ｹﾞ"]%space @6-36-46-5-1246-23
+noback context `["ｺﾞ"]%space @6-36-46-5-246-23
+
+noback context `["ｻ"]%space @6-36-46-156-23
+noback context `["ｼ"]%space @6-36-46-1256-23
+noback context `["ｽ"]%space @6-36-46-1456-23
+noback context `["ｾ"]%space @6-36-46-12456-23
+noback context `["ｿ"]%space @6-36-46-2456-23
+noback context `["ｻﾞ"]%space @6-36-46-5-156-23
+noback context `["ｼﾞ"]%space @6-36-46-5-1256-23
+noback context `["ｽﾞ"]%space @6-36-46-5-1456-23
+noback context `["ｾﾞ"]%space @6-36-46-5-12456-23
+noback context `["ｿﾞ"]%space @6-36-46-5-2456-23
+
+noback context `["ﾀ"]%space @6-36-46-135-23
+noback context `["ﾁ"]%space @6-36-46-1235-23
+noback context `["ﾂ"]%space @6-36-46-1345-23
+noback context `["ﾃ"]%space @6-36-46-12345-23
+noback context `["ﾄ"]%space @6-36-46-2345-23
+noback context `["ﾀﾞ"]%space @6-36-46-5-135-23
+noback context `["ﾁﾞ"]%space @6-36-46-5-1235-23
+noback context `["ﾂﾞ"]%space @6-36-46-5-1345-23
+noback context `["ﾃﾞ"]%space @6-36-46-5-12345-23
+noback context `["ﾄﾞ"]%space @6-36-46-5-2345-23
+
+noback context `["ﾅ"]%space @6-36-46-13-23
+noback context `["ﾆ"]%space @6-36-46-123-23
+noback context `["ﾇ"]%space @6-36-46-134-23
+noback context `["ﾈ"]%space @6-36-46-1234-23
+noback context `["ﾉ"]%space @6-36-46-234-23
+
+noback context `["ﾊ"]%space @6-36-46-136-23
+noback context `["ﾋ"]%space @6-36-46-1236-23
+noback context `["ﾌ"]%space @6-36-46-1346-23
+noback context `["ﾍ"]%space @6-36-46-12346-23
+noback context `["ﾎ"]%space @6-36-46-2346-23
+noback context `["ﾊﾞ"]%space @6-36-46-5-136-23
+noback context `["ﾋﾞ"]%space @6-36-46-5-1236-23
+noback context `["ﾌﾞ"]%space @6-36-46-5-1346-23
+noback context `["ﾍﾞ"]%space @6-36-46-5-12346-23
+noback context `["ﾎﾞ"]%space @6-36-46-5-2346-23
+noback context `["ﾊﾟ"]%space @6-36-46-6-136-23
+noback context `["ﾋﾟ"]%space @6-36-46-6-1236-23
+noback context `["ﾌﾟ"]%space @6-36-46-6-1346-23
+noback context `["ﾍﾟ"]%space @6-36-46-6-12346-23
+noback context `["ﾎﾟ"]%space @6-36-46-6-2346-23
+
+noback context `["ﾏ"]%space @6-36-46-1356-23
+noback context `["ﾐ"]%space @6-36-46-12356-23
+noback context `["ﾑ"]%space @6-36-46-13456-23
+noback context `["ﾒ"]%space @6-36-46-123456-23
+noback context `["ﾓ"]%space @6-36-46-23456-23
+
+noback context `["ﾔ"]%space @6-36-46-34-23
+noback context `["ﾕ"]%space @6-36-46-346-23
+noback context `["ﾖ"]%space @6-36-46-345-23
+
+noback context `["ﾗ"]%space @6-36-46-15-23
+noback context `["ﾘ"]%space @6-36-46-125-23
+noback context `["ﾙ"]%space @6-36-46-145-23
+noback context `["ﾚ"]%space @6-36-46-1245-23
+noback context `["ﾛ"]%space @6-36-46-245-23
+
+noback context `["ﾜ"]%space @6-36-46-3-23
+noback context `["ｦ"]%space @6-36-46-35-23
+noback context `["ﾝ"]%space @6-36-46-356-23
+
+noback context `["ｱ"]%hiragana @6-36-46-1-23
+noback context `["ｲ"]%hiragana @6-36-46-12-23
+noback context `["ｳ"]%hiragana @6-36-46-14-23
+noback context `["ｴ"]%hiragana @6-36-46-124-23
+noback context `["ｵ"]%hiragana @6-36-46-24-23
+noback context `["ｶ"]%hiragana @6-36-46-16-23
+noback context `["ｷ"]%hiragana @6-36-46-126-23
+noback context `["ｸ"]%hiragana @6-36-46-146-23
+noback context `["ｹ"]%hiragana @6-36-46-1246-23
+noback context `["ｺ"]%hiragana @6-36-46-246-23
+noback context `["ｶﾞ"]%hiragana @6-36-46-5-16-23
+noback context `["ｷﾞ"]%hiragana @6-36-46-5-126-23
+noback context `["ｸﾞ"]%hiragana @6-36-46-5-146-23
+noback context `["ｹﾞ"]%hiragana @6-36-46-5-1246-23
+noback context `["ｺﾞ"]%hiragana @6-36-46-5-246-23
+
+noback context `["ｻ"]%hiragana @6-36-46-156-23
+noback context `["ｼ"]%hiragana @6-36-46-1256-23
+noback context `["ｽ"]%hiragana @6-36-46-1456-23
+noback context `["ｾ"]%hiragana @6-36-46-12456-23
+noback context `["ｿ"]%hiragana @6-36-46-2456-23
+noback context `["ｻﾞ"]%hiragana @6-36-46-5-156-23
+noback context `["ｼﾞ"]%hiragana @6-36-46-5-1256-23
+noback context `["ｽﾞ"]%hiragana @6-36-46-5-1456-23
+noback context `["ｾﾞ"]%hiragana @6-36-46-5-12456-23
+noback context `["ｿﾞ"]%hiragana @6-36-46-5-2456-23
+
+noback context `["ﾀ"]%hiragana @6-36-46-153-23
+noback context `["ﾁ"]%hiragana @6-36-46-1235-23
+noback context `["ﾂ"]%hiragana @6-36-46-1345-23
+noback context `["ﾃ"]%hiragana @6-36-46-12345-23
+noback context `["ﾄ"]%hiragana @6-36-46-2345-23
+noback context `["ﾀﾞ"]%hiragana @6-36-46-5-135-23
+noback context `["ﾁﾞ"]%hiragana @6-36-46-5-1235-23
+noback context `["ﾂﾞ"]%hiragana @6-36-46-5-1345-23
+noback context `["ﾃﾞ"]%hiragana @6-36-46-5-12345-23
+noback context `["ﾄﾞ"]%hiragana @6-36-46-5-2345-23
+
+noback context `["ﾅ"]%hiragana @6-36-46-13-23
+noback context `["ﾆ"]%hiragana @6-36-46-123-23
+noback context `["ﾇ"]%hiragana @6-36-46-134-23
+noback context `["ﾈ"]%hiragana @6-36-46-1234-23
+noback context `["ﾉ"]%hiragana @6-36-46-234-23
+
+noback context `["ﾊ"]%hiragana @6-36-46-136-23
+noback context `["ﾋ"]%hiragana @6-36-46-1236-23
+noback context `["ﾌ"]%hiragana @6-36-46-1346-23
+noback context `["ﾍ"]%hiragana @6-36-46-12346-23
+noback context `["ﾎ"]%hiragana @6-36-46-2346-23
+noback context `["ﾊﾞ"]%hiragana @6-36-46-5-136-23
+noback context `["ﾋﾞ"]%hiragana @6-36-46-5-1236-23
+noback context `["ﾌﾞ"]%hiragana @6-36-46-5-1346-23
+noback context `["ﾍﾞ"]%hiragana @6-36-46-5-12346-23
+noback context `["ﾎﾞ"]%hiragana @6-36-46-5-2346-23
+noback context `["ﾊﾟ"]%hiragana @6-36-46-6-136-23
+noback context `["ﾋﾟ"]%hiragana @6-36-46-6-1236-23
+noback context `["ﾌﾟ"]%hiragana @6-36-46-6-1346-23
+noback context `["ﾍﾟ"]%hiragana @6-36-46-6-12346-23
+noback context `["ﾎﾟ"]%hiragana @6-36-46-6-2346-23
+
+noback context `["ﾏ"]%hiragana @6-36-46-1356-23
+noback context `["ﾐ"]%hiragana @6-36-46-12356-23
+noback context `["ﾑ"]%hiragana @6-36-46-13456-23
+noback context `["ﾒ"]%hiragana @6-36-46-123456-23
+noback context `["ﾓ"]%hiragana @6-36-46-23456-23
+
+noback context `["ﾔ"]%hiragana @6-36-46-34-23
+noback context `["ﾕ"]%hiragana @6-36-46-346-23
+noback context `["ﾖ"]%hiragana @6-36-46-345-23
+
+noback context `["ﾗ"]%hiragana @6-36-46-15-23
+noback context `["ﾘ"]%hiragana @6-36-46-125-23
+noback context `["ﾙ"]%hiragana @6-36-46-145-23
+noback context `["ﾚ"]%hiragana @6-36-46-1245-23
+noback context `["ﾛ"]%hiragana @6-36-46-245-23
+
+noback context `["ﾜ"]%hiragana @6-36-46-3-23
+noback context `["ｦ"]%hiragana @6-36-46-35-23
+noback context `["ﾝ"]%hiragana @6-36-46-356-23
+
+noback context ["ｳｨ"]%hiragana @26-12-23
+noback context ["ｳｪ"]%hiragana @26-124-23
+noback context ["ｳｫ"]%hiragana @26-24-23
+noback context ["ｷｬ"]%hiragana @4-16-23
+noback context ["ｷｭ"]%hiragana @4-146-23
+noback context ["ｷｮ"]%hiragana @4-246-23
+noback context ["ｷﾞｬ"]%hiragana @45-16-23
+noback context ["ｷﾞｭ"]%hiragana @45-146-23
+noback context ["ｷﾞｮ"]%hiragana @45-246-23
+noback context ["ｼｬ"]%hiragana @4-156-23
+noback context ["ｼｭ"]%hiragana @4-1456-23
+noback context ["ｼｮ"]%hiragana @4-2456-23
+noback context ["ｼﾞｬ"]%hiragana @45-156-23
+noback context ["ｼﾞｭ"]%hiragana @45-1456-23
+noback context ["ｼﾞｮ"]%hiragana @45-2456-23
+noback context ["ｼｪ"]%hiragana @4-12456-23
+noback context ["ｼﾞｪ"]%hiragana @45-12456-23
+noback context ["ｼｬ"]~ @4-156-23
+noback context ["ｼｭ"]~ @4-1456-23
+noback context ["ｼｮ"]~ @4-2456-23
+noback context ["ｼﾞｬ"]~ @45-156-23
+noback context ["ｼﾞｭ"]~ @45-1456-23
+noback context ["ｼﾞｮ"]~ @45-2456-23
+noback context ["ｼｪ"]~ @4-12456-23
+noback context ["ｼﾞｪ"]~ @45-12456-23
+
+noback context ["ﾁｬ"]%hiragana @4-135-23
+noback context ["ﾁｭ"]%hiragana @4-1345-23
+noback context ["ﾁｮ"]%hiragana @4-2345-23
+noback context ["ﾁｪ"]%hiragana @4-12345-23
+noback context ["ﾃｨ"]%hiragana @4-1235-23
+noback context ["ﾃﾞｨ"]%hiragana @45-1235-23
+noback context ["ﾄｩ"]%hiragana @26-1345-23
+noback context ["ﾄﾞｩ"]%hiragana @256-1345-23
+noback context ["ﾁｬ"]~ @4-135-23
+noback context ["ﾁｭ"]~ @4-1345-23
+noback context ["ﾁｮ"]~ @4-2345-23
+noback context ["ﾁｪ"]~ @4-12345-23
+noback context ["ﾃｨ"]~ @4-1235-23
+noback context ["ﾃﾞｨ"]~ @45-1235-23
+noback context ["ﾄｩ"]~ @26-1345-23
+noback context ["ﾄﾞｩ"]~ @256-1345-23
+
+noback context ["ﾆｬ"]%hiragana @4-13-23
+noback context ["ﾆｭ"]%hiragana @4-134-23
+noback context ["ﾆｮ"]%hiragana @4-234-23
+noback context ["ﾆｬ"]~ @4-13-23
+noback context ["ﾆｭ"]~ @4-134-23
+noback context ["ﾆｮ"]~ @4-234-23
+
+noback context ["ﾋｬ"]%hiragana @4-136-23
+noback context ["ﾋｭ"]%hiragana @4-1346-23
+noback context ["ﾋｮ"]%hiragana @4-2346-23
+noback context ["ﾋｬ"]~ @4-136-23
+noback context ["ﾋｭ"]~ @4-1346-23
+noback context ["ﾋｮ"]~ @4-2346-23
+
+noback context `["ﾌｧ"]~ @26-136-23
+noback context ["ﾌｧ"]%hiragana @26-136-23
+noback context `["ﾌｨ"]~ @26-1236-23
+noback context ["ﾌｨ"]%hiragana @26-1236-23
+
+noback context `["ﾌｫ"]~ @26-2346-23
+noback context ["ﾌｫ"]%hiragana @26-2346-23
+
+noback context `[]%hankakukatakana @6-36-46
+noback context %hankakukatakana[]~ @23
+noback context %hankakukatakana[]!%hankakukatakana @23
+noback context !%hankakukatakana[]%hankakukatakana @6-36-46
+# end Hankaku Katakana rules

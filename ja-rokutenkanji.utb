@@ -108,6 +108,7 @@ digit 7 1245
 digit 8 125
 digit 9 24
 litdigit 0 245
+sign 〇 5-3456-245 漢数字 IDEOGRAPHIC NUMBER ZERO      
 litdigit 1 1
 litdigit 2 12
 litdigit 3 14

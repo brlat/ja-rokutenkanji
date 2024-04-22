@@ -1,0 +1,21 @@
+# begin misc symbols
+sign ⦅ 5-2356 left white parenthesis
+sign ⦆ 2356-2 right white parenthesis
+# end misc symbols
+
+# begin IPA(International Phonetic Alphabet)
+sign ː 25 colon
+sign ə 26 shwa
+sign ǽ 456-146
+sign ʌ́ 456-346 turned v with acute accent
+sign ɑ́ 456-16 alpha with acute accent
+sign è 45-15 e with grave accent
+sign ɔ́ 456-126 open o with acute accent
+sign ó 456-135 o with acute accent
+sign ʃ 156 esh
+sign ʒ 2346 ezh
+sign θ 1456 voiceless th sound
+sign ð 12456 voiced th sound
+sign ŋ 1246 eng
+# end IPA(International Phonetic Alphabet)
+

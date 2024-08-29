@@ -2,63 +2,50 @@
 
 #-index-name: Japanese, Rokuten Kanji
 #-display-name: Rokuten Kanji
-
 #+language:ja
 #+type:literary
 #+contraction:no
 #+grade:1
 #+dots: 6
 #+direction:both
-
 # copyright (C) 2024, Yoza Kensaku <kanjibrailles@gmail.com>
 # Copyright (C) 2024, Kiriake Masanori <seiken@rd01.net>
-
 #-license: LGPLv2.1
 #-author-name: Yoza Kensaku, Kiriake Masanori
 #-maintainer-name: Yoza Kensaku, Kiriake Masanori
 #-maintainer-email: Yoza Kensaku <kanjibrailles@gmail.com>, Kiriake Masanori <seiken@rd01.net>
-
 # This file is part of liblouis.
 #
 # liblouis is free software: you can redistribute it and/or modify it
 # under the terms of the GNU Lesser General Public License as
 # published by the Free Software Foundation, either version 2.1 of
 # the License, or (at your option) any later version.
-#
 # liblouis is distributed in the hope that it will be useful, but
 # WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 # Lesser General Public License for more details.
-#
 # You should have received a copy of the GNU Lesser General Public
 # License along with liblouis. If not, see
 # <http://www.gnu.org/licenses/>.
-
 # This table mainly conforms to the rules of "Hasegawa Rokuten Kanji", and
 # partly to the Braille Authority of Japan's standard Japanese
 # braille. 
-
 # Rokuten Kanji, or 6dot Kanji Braille, was devised by Sadao Hasegawa in 1972. 
 # Rokuten Kanji data is available at this site:
 # 六点漢字 日本語点字体系(The system of Rokutenji Japanese Braille)
 # https://github.com/code4sabae/tenji/blob/master/README.md
-#
 # Sadao Hasegawa's essays on why and how he devised Rokuten Kanji is available at this site(in Japanese):
-#
 # 六点漢字の自叙伝(Autobiography of Rokuten Kanji)
 # http://www.wesranet.com/6ten/txt6idx.html
-#
 # Rokuten Kanji's purpose was to enable Japanese Braille users to be able to write Kanji characters with computers using 6dot Braille system.
 # In Rokuten Kanji braille system, there are corresponding braille symbols for each kanji character.
 # With Rokuten Kanji braille system, you can transcribe hiragana, katakana, Roman alphabet, and kanji directly. 
-#
 # In Rokuten Kanji system, each Kanji character consists of 2 parts--one for "On Yomi(reading)", the other for "Kun Yomi".
 # On Yomi is Chinese origin reading(or pronunciation) and Kun Yomi is Japanese native reading.
 # For example, the Kanji character for a mountain "山" has On Yomi "san" and Kun Yomi "yama".
 # Rokuten Kanji Braille symbol for the character mountain "山" is san-ya, conbination of "san" and "yama"'s "ya". 
 # Each Rokuten Kanji Braille symbol is 3 Braille cells, 2 cells for Kun Yomi, and 1 for On Yomi.
 # And the first cell is also the Kanji indicator, which differentiate from Kana Braille.
-
 # Japanese standard braille is the braille script of the Japanese
 # language, but not necessarily to Japanese "written" language.
 # Japanese written language consists of hiragana, katakana, Roman
@@ -66,10 +53,7 @@
 # would be written in the hiragana or katakana syllabaries, without
 # any provision for writing kanji. Japanese standard braille is
 # maintained by the Braille Authority of Japan: http://braille.jp/.
-#
-
 # Start translation rules
-
 # begin space
 space \x3000 0 zenkaku(full width) space
 space \x0020 0 blank
@@ -92,10 +76,8 @@ space \x2009 0
 space \x200a 0  
 space \x200b 0  
 # end space
-
 # begin numbers
 numsign 3456
-
 # Hankaku numbers
 digit 0 245
 digit 1 1
@@ -118,7 +100,6 @@ litdigit 6 124
 litdigit 7 1245
 litdigit 8 125
 litdigit 9 24
-
 # Zenkaku numbers
 digit ０ 245
 digit １ 1
@@ -140,7 +121,6 @@ litdigit ６ 124
 litdigit ７ 1245
 litdigit ８ 125
 litdigit ９ 24
-
 # numbers related rules
 after digit always 1 0-1
 after digit always 2 0-12
@@ -163,12 +143,10 @@ after digit always リ 0-253-125
 after digit always オ 0-253-24
 after digit always ロ 0-253-245
 # end numbers
-
 # begin alphabet
 capsletter 56-6
 begcapsword 56-6-6
 endcapsword 6-3
-
 # Hankaku(half-width) (ASCII) alphabet
 lowercase a 1
 lowercase b 12
@@ -196,7 +174,6 @@ lowercase w 2456
 lowercase x 1436
 lowercase y 14536
 lowercase z 1536
-
 # Zenkaku(full-width) alphabet
 lowercase ａ 1
 lowercase ｂ 12
@@ -224,7 +201,6 @@ lowercase ｗ 2456
 lowercase ｘ 1436
 lowercase ｙ 14536
 lowercase ｚ 1536
-
 lowercase \x02b1 46-1 α Alpha
 lowercase \x02b1 46-12 β Beta
 lowercase \x02b2 46-1245 γ Gamma
@@ -250,7 +226,6 @@ lowercase \x02c3 46-12346 χ Chi
 lowercase \x02c6 46-13456 ψ Psi
 lowercase \x02c9 46-2456 ω Omega
 # end alphabet
-
 # begin Hankaku(half width) punctuations and symbols
 punctuation ! 253-0
 sign " 56-23
@@ -288,7 +263,6 @@ sign } 56-453
 sign | 56-1256
 sign { 56-126
 punctuation ~ 5-14
-
 lowercase \x00e0 45-16-1 à
 lowercase \x00e1 45-34-1 á
 lowercase \x00e1 45-146-1 â
@@ -356,7 +330,6 @@ sign \x0093 36-36
 sign \x0092 236  
 sign \x0094 356  
 sign \x0095 36  
-sign \x0093 36-36  
 sign \x00a1 45-56-235 ¡ 
 sign \x00a1 235 ¡ 
 sign \x00a1 4-14 ¢ cent
@@ -500,9 +473,6 @@ sign \x1219 4-126 〈
 sign \x121A 4-345 〉 
 sign \x2006 56-2536 〈 
 sign \x2009 2536-23 〉 
-sign \x0092 236  
-sign \x0094 356  
-sign \x0095 36  
 sign \x14a0 456-1436-123 ■ filled
 sign \x14a1 456-1436-123 □ square
 sign \x14a3 46-1246-3456-145 ▧ shaded
@@ -512,7 +482,6 @@ sign \x14cb 456-1436-123 ○ circle
 sign \x14cd 46-1246-123456 ◍ shaded
 sign \x19b4 46-245 ⦵ 'normal'
 always !? 253-26-0
-
 # Uppercase letters
 base uppercase A a
 base uppercase B b
@@ -620,7 +589,6 @@ base uppercase \x00dc \x00fc Üü
 base uppercase \x00de \x00fe Þþ
 base uppercase \x00dd \x00fd Ýý
 # end Hankaku(half width) punctuations and symbols
-
 # begin Zenkaku(full width) punctuations and symbols
 punctuation 、 56-0
 punctuation 。 256-0
@@ -686,7 +654,6 @@ sign ゝ 236
 sign ゞ 5-236
 sign ヾ 5-236
 sign “ 56-23          
-sign ” 56-23
 sign － 6-36
 sign ℃ 56-145-6-14-0          
 sign 々 236
@@ -729,7 +696,6 @@ sign ⅼ 56-6-123
 sign ⅽ 56-6-14
 sign ⅾ 56-6-145
 sign ⅿ 56-6-134
-
 sign ① 3456-1-256-0
 sign ② 3456-12-256-0
 sign ③ 3456-14-256-0
@@ -820,7 +786,6 @@ sign ’ 3
 sign ※ 35-35-0
 sign ♪ 5-2536-24-536-6-1436-2536-2
 # end Zenkaku(full width) punctuations and symbols
-
 # begin Hiragana
 # SeiOn and dakuOn (basic characters)
 sign あ 1 a
@@ -896,7 +861,6 @@ sign ゐ 46-12
 sign ゑ 46-124
 sign を 53 wo
 sign ん 536 n
-
 # small Hiragana characters
 sign ぁ 45-1 small a
 sign ぃ 45-12 small i
@@ -907,7 +871,6 @@ sign っ 2 small tsu
 sign ゃ 45-43 small ya
 sign ゅ 45-436 small yu
 sign ょ 45-453 small yo
-
 # Yo-on (contracted sound)
 always きゃ 4-16 kya
 always きゅ 4-146 kyu
@@ -950,9 +913,7 @@ always りゃ 4-15 rya
 always りゅ 4-145 ryu
 always りょ 4-245 ryo
 # end Hiragana
-
 # begin Zenkaku Katakana
-# SeiOn and dakuOn (basic characters)
 sign ア 1 a
 sign イ 12 i
 sign ウ 14 u
@@ -1026,7 +987,6 @@ sign ロ 245 ro
 sign ワ 3 wa
 sign ヲ 53 wo
 sign ン 536 n
-
 # small Katakana characters
 sign ァ 45-1 small a
 sign ィ 45-12 small i
@@ -1039,7 +999,6 @@ sign ッ 2 small tsu
 sign ャ 45-43 small ya
 sign ュ 45-436 small yu
 sign ョ 45-453 small yo
-
 # Yoon (contracted sound)
 always ウィ 26-12
 always ウェ 26-124
@@ -1101,9 +1060,7 @@ always リャ 4-15
 always リュ 4-145
 always リョ 4-245
 # end Zenkaku Katakana
-
 # begin Hankaku Katakana
-# SeiOn and dakuOn (basic characters)
 sign ｱ 1 a
 sign ｲ 12 i
 sign ｳ 14 u
@@ -1177,8 +1134,6 @@ sign ﾛ 245 ro
 sign ﾜ 3 wa
 sign ｦ 53 wo
 sign ﾝ 536 n
-
-# small Katakana characters
 sign ｧ 45-1 small a
 sign ｨ 45-12 small i
 sign ｩ 45-14 small u
@@ -1188,8 +1143,6 @@ sign ｯ 2 small tsu
 sign ｬ 45-43 small ya
 sign ｭ 45-436 small yu
 sign ｮ 45-453 small yo
-
-# Yoon (contracted sound)
 always ｳｨ 26-12
 always ｳｪ 26-124
 always ｳｫ 26-24
@@ -1250,8 +1203,6 @@ always ﾘｬ 4-15
 always ﾘｭ 4-145
 always ﾘｮ 4-245
 # end Hankaku Katakana
-
-
 # begin Kanji
 sign 亜 6-1-12
 sign 唖 6-1-245
@@ -7603,7 +7554,6 @@ sign 龕 456-2-135
 sign 龜 235-1245-126-123456
 sign 龠 235-145-34-34
 # end Kanji
-
 # begin Kangxi Radicals
 sign ⺒ 26-134-24 # 巳
 sign ⺟ 56-56-136 # 母
@@ -7830,7 +7780,6 @@ sign ⿓ 235-6-145-135 # 龍
 sign ⿔ 235-1245-126-123456 # 龜
 sign ⿕ 235-145-34-34 # 龠
 # end Kangxi Radicals
-
 # begin CJK Unified Ideographs
 sign 豈 235-125-2-1356 # 豈
 sign 更 6-234-156 # 更
@@ -8244,7 +8193,6 @@ sign 響 46-126-1236 # 響
 sign 頻 456-1236-15 # 頻
 sign 龜 235-1245-126-123456 # 龜
 # end CJK Unified Ideographs
-
 # begin misc symbols
 sign ⦅ 5-2356 left white parenthesis
 sign ⦆ 2356-2 right white parenthesis
@@ -8252,7 +8200,6 @@ sign ⚷ 0-35-35-0 chiron
 sign ⚸ 0-35-35-0
 sign · 6-0 middle dot
 # end misc symbols
-
 # begin IPA(International Phonetic Alphabet)
 sign ː 25 colon
 sign ə 26 shwa
@@ -8269,12 +8216,10 @@ sign ð 12456 voiced th sound
 sign ŋ 1246 eng
 always t̬ 2345
 # end IPA(International Phonetic Alphabet)
-
 # begin character class rules
 attribute katakana アイウエオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモヤユヨラリルレロヮワヰヱヲンヴーヵヶァィゥェォャュョ
 attribute hankakukatakana ｱｲｳｴｵｶｶﾞｷｷﾞｸｸﾞｹｹﾞｺｺﾞｻｻﾞｼｼﾞｽｽﾞｾｾﾞｿｿﾞﾀﾀﾞﾁﾁﾞｯﾂﾂﾞﾃﾃﾞﾄﾄﾞﾅﾆﾇﾈﾉﾊﾊﾞﾊﾟﾋﾋﾞﾋﾟﾌﾌﾞﾌﾟﾍﾍﾞﾍﾟﾎﾎﾞﾎﾟﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛヮﾜヰヱｦﾝｳﾞｰヵヶｧｨｩｪｫｬｭｮ
 attribute hiragana あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらいるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽっ
-
 # begin Zenkaku Katakana rules
 # Katakana characters are indicated with Katakana opening dots6-36 and closing dots23.
 # Some Katakana combinations cannot be properly indicated.
@@ -8282,7 +8227,6 @@ attribute hiragana あいうえおかきくけこさしすせそたちつてと�
 # because they are defined with "always".
 noback context `["ー"]%space @6-36-25-23
 noback context `["ー"]%hiragana @6-36-25-23
-
 noback context `["ア"]%space @6-36-1-23
 noback context `["イ"]%space @6-36-12-23
 noback context `["ウ"]%space @6-36-14-23
@@ -8298,7 +8242,6 @@ noback context `["ギ"]%space @6-36-5-126-23
 noback context `["グ"]%space @6-36-5-146-23
 noback context `["ゲ"]%space @6-36-5-1246-23
 noback context `["ゴ"]%space @6-36-5-246-23
-
 noback context `["サ"]%space @6-36-156-23
 noback context `["シ"]%space @6-36-1256-23
 noback context `["ス"]%space @6-36-1456-23
@@ -8309,7 +8252,6 @@ noback context `["ジ"]%space @6-36-5-1256-23
 noback context `["ズ"]%space @6-36-5-1456-23
 noback context `["ゼ"]%space @6-36-5-12456-23
 noback context `["ゾ"]%space @6-36-5-2456-23
-
 noback context `["タ"]%space @6-36-135-23
 noback context `["チ"]%space @6-36-1235-23
 noback context `["ツ"]%space @6-36-1345-23
@@ -8320,13 +8262,11 @@ noback context `["ヂ"]%space @6-36-5-1235-23
 noback context `["ヅ"]%space @6-36-5-1345-23
 noback context `["デ"]%space @6-36-5-12345-23
 noback context `["ド"]%space @6-36-5-2345-23
-
 noback context `["ナ"]%space @6-36-13-23
 noback context `["ニ"]%space @6-36-123-23
 noback context `["ヌ"]%space @6-36-134-23
 noback context `["ネ"]%space @6-36-1234-23
 noback context `["ノ"]%space @6-36-234-23
-
 noback context `["ハ"]%space @6-36-136-23
 noback context `["ヒ"]%space @6-36-1236-23
 noback context `["フ"]%space @6-36-1346-23
@@ -8342,27 +8282,22 @@ noback context `["ピ"]%space @6-36-6-1236-23
 noback context `["プ"]%space @6-36-6-1346-23
 noback context `["ペ"]%space @6-36-6-12346-23
 noback context `["ポ"]%space @6-36-6-2346-23
-
 noback context `["マ"]%space @6-36-1356-23
 noback context `["ミ"]%space @6-36-12356-23
 noback context `["ム"]%space @6-36-13456-23
 noback context `["メ"]%space @6-36-123456-23
 noback context `["モ"]%space @6-36-23456-23
-
 noback context `["ヤ"]%space @6-36-34-23
 noback context `["ユ"]%space @6-36-346-23
 noback context `["ヨ"]%space @6-36-345-23
-
 noback context `["ラ"]%space @6-36-15-23
 noback context `["リ"]%space @6-36-125-23
 noback context `["ル"]%space @6-36-145-23
 noback context `["レ"]%space @6-36-1245-23
 noback context `["ロ"]%space @6-36-245-23
-
 noback context `["ワ"]%space @6-36-3-23
 noback context `["ヲ"]%space @6-36-35-23
 noback context `["ン"]%space @6-36-356-23
-
 noback context `["ア"]%hiragana @6-36-1-23
 noback context `["イ"]%hiragana @6-36-12-23
 noback context `["ウ"]%hiragana @6-36-14-23
@@ -8378,7 +8313,6 @@ noback context `["ギ"]%hiragana @6-36-5-126-23
 noback context `["グ"]%hiragana @6-36-5-146-23
 noback context `["ゲ"]%hiragana @6-36-5-1246-23
 noback context `["ゴ"]%hiragana @6-36-5-246-23
-
 noback context `["サ"]%hiragana @6-36-156-23
 noback context `["シ"]%hiragana @6-36-1256-23
 noback context `["ス"]%hiragana @6-36-1456-23
@@ -8389,7 +8323,6 @@ noback context `["ジ"]%hiragana @6-36-5-1256-23
 noback context `["ズ"]%hiragana @6-36-5-1456-23
 noback context `["ゼ"]%hiragana @6-36-5-12456-23
 noback context `["ゾ"]%hiragana @6-36-5-2456-23
-
 noback context `["タ"]%hiragana @6-36-153-23
 noback context `["チ"]%hiragana @6-36-1235-23
 noback context `["ツ"]%hiragana @6-36-1345-23
@@ -8400,13 +8333,11 @@ noback context `["ヂ"]%hiragana @6-36-5-1235-23
 noback context `["ヅ"]%hiragana @6-36-5-1345-23
 noback context `["デ"]%hiragana @6-36-5-12345-23
 noback context `["ド"]%hiragana @6-36-5-2345-23
-
 noback context `["ナ"]%hiragana @6-36-13-23
 noback context `["ニ"]%hiragana @6-36-123-23
 noback context `["ヌ"]%hiragana @6-36-134-23
 noback context `["ネ"]%hiragana @6-36-1234-23
 noback context `["ノ"]%hiragana @6-36-234-23
-
 noback context `["ハ"]%hiragana @6-36-136-23
 noback context `["ヒ"]%hiragana @6-36-1236-23
 noback context `["フ"]%hiragana @6-36-1346-23
@@ -8422,27 +8353,22 @@ noback context `["ピ"]%hiragana @6-36-6-1236-23
 noback context `["プ"]%hiragana @6-36-6-1346-23
 noback context `["ペ"]%hiragana @6-36-6-12346-23
 noback context `["ポ"]%hiragana @6-36-6-2346-23
-
 noback context `["マ"]%hiragana @6-36-1356-23
 noback context `["ミ"]%hiragana @6-36-12356-23
 noback context `["ム"]%hiragana @6-36-13456-23
 noback context `["メ"]%hiragana @6-36-123456-23
 noback context `["モ"]%hiragana @6-36-23456-23
-
 noback context `["ヤ"]%hiragana @6-36-34-23
 noback context `["ユ"]%hiragana @6-36-346-23
 noback context `["ヨ"]%hiragana @6-36-345-23
-
 noback context `["ラ"]%hiragana @6-36-15-23
 noback context `["リ"]%hiragana @6-36-125-23
 noback context `["ル"]%hiragana @6-36-145-23
 noback context `["レ"]%hiragana @6-36-1245-23
 noback context `["ロ"]%hiragana @6-36-245-23
-
 noback context `["ワ"]%hiragana @6-36-3-23
 noback context `["ヲ"]%hiragana @6-36-35-23
 noback context `["ン"]%hiragana @6-36-356-23
-
 noback context ["ウィ"]%hiragana @26-12-23
 noback context ["ウェ"]%hiragana @26-124-23
 noback context ["ウォ"]%hiragana @26-24-23
@@ -8468,7 +8394,6 @@ noback context ["ジュ"]~ @45-1456-23
 noback context ["ジョ"]~ @45-2456-23
 noback context ["シェ"]~ @4-12456-23
 noback context ["ジェ"]~ @45-12456-23
-
 noback context ["チャ"]%hiragana @4-135-23
 noback context ["チュ"]%hiragana @4-1345-23
 noback context ["チョ"]%hiragana @4-2345-23
@@ -8485,29 +8410,24 @@ noback context ["ティ"]~ @4-1235-23
 noback context ["ディ"]~ @45-1235-23
 noback context ["トゥ"]~ @26-1345-23
 noback context ["ドゥ"]~ @256-1345-23
-
 noback context ["ニャ"]%hiragana @4-13-23
 noback context ["ニュ"]%hiragana @4-134-23
 noback context ["ニョ"]%hiragana @4-234-23
 noback context ["ニャ"]~ @4-13-23
 noback context ["ニュ"]~ @4-134-23
 noback context ["ニョ"]~ @4-234-23
-
 noback context ["ヒャ"]%hiragana @4-136-23
 noback context ["ヒュ"]%hiragana @4-1346-23
 noback context ["ヒョ"]%hiragana @4-2346-23
 noback context ["ヒャ"]~ @4-136-23
 noback context ["ヒュ"]~ @4-1346-23
 noback context ["ヒョ"]~ @4-2346-23
-
 noback context `["ファ"]~ @26-136-23
 noback context ["ファ"]%hiragana @26-136-23
 noback context `["フィ"]~ @26-1236-23
 noback context ["フィ"]%hiragana @26-1236-23
-
 noback context `["フォ"]~ @26-2346-23
 noback context ["フォ"]%hiragana @26-2346-23
-
 noback context `[]%katakana @6-36
 noback context %katakana[]~ @23
 noback context %katakana[]!%katakana @23
@@ -8515,12 +8435,9 @@ noback context !%katakana[]%katakana @6-36
 # end Zenkaku Katakana rules
 # begin Hankaku Katakana rules
 # Hankaku Katakana characters are indicated with Katakana opening dots6-36-46 and closing dots23.
-# Some Katakana combinations cannot be properly indicated.
 # For example, after small Katakana "ｧｨｩｪｵｬｭｮ"
-# because they are defined with "always".
 noback context `["ｰ"]%space @6-36-46-25-23
 noback context `["ｰ"]%hiragana @6-36-46-25-23
-
 noback context `["ｱ"]%space @6-36-46-1-23
 noback context `["ｲ"]%space @6-36-46-12-23
 noback context `["ｳ"]%space @6-36-46-14-23
@@ -8536,7 +8453,6 @@ noback context `["ｷﾞ"]%space @6-36-46-5-126-23
 noback context `["ｸﾞ"]%space @6-36-46-5-146-23
 noback context `["ｹﾞ"]%space @6-36-46-5-1246-23
 noback context `["ｺﾞ"]%space @6-36-46-5-246-23
-
 noback context `["ｻ"]%space @6-36-46-156-23
 noback context `["ｼ"]%space @6-36-46-1256-23
 noback context `["ｽ"]%space @6-36-46-1456-23
@@ -8547,7 +8463,6 @@ noback context `["ｼﾞ"]%space @6-36-46-5-1256-23
 noback context `["ｽﾞ"]%space @6-36-46-5-1456-23
 noback context `["ｾﾞ"]%space @6-36-46-5-12456-23
 noback context `["ｿﾞ"]%space @6-36-46-5-2456-23
-
 noback context `["ﾀ"]%space @6-36-46-135-23
 noback context `["ﾁ"]%space @6-36-46-1235-23
 noback context `["ﾂ"]%space @6-36-46-1345-23
@@ -8558,13 +8473,11 @@ noback context `["ﾁﾞ"]%space @6-36-46-5-1235-23
 noback context `["ﾂﾞ"]%space @6-36-46-5-1345-23
 noback context `["ﾃﾞ"]%space @6-36-46-5-12345-23
 noback context `["ﾄﾞ"]%space @6-36-46-5-2345-23
-
 noback context `["ﾅ"]%space @6-36-46-13-23
 noback context `["ﾆ"]%space @6-36-46-123-23
 noback context `["ﾇ"]%space @6-36-46-134-23
 noback context `["ﾈ"]%space @6-36-46-1234-23
 noback context `["ﾉ"]%space @6-36-46-234-23
-
 noback context `["ﾊ"]%space @6-36-46-136-23
 noback context `["ﾋ"]%space @6-36-46-1236-23
 noback context `["ﾌ"]%space @6-36-46-1346-23
@@ -8580,27 +8493,22 @@ noback context `["ﾋﾟ"]%space @6-36-46-6-1236-23
 noback context `["ﾌﾟ"]%space @6-36-46-6-1346-23
 noback context `["ﾍﾟ"]%space @6-36-46-6-12346-23
 noback context `["ﾎﾟ"]%space @6-36-46-6-2346-23
-
 noback context `["ﾏ"]%space @6-36-46-1356-23
 noback context `["ﾐ"]%space @6-36-46-12356-23
 noback context `["ﾑ"]%space @6-36-46-13456-23
 noback context `["ﾒ"]%space @6-36-46-123456-23
 noback context `["ﾓ"]%space @6-36-46-23456-23
-
 noback context `["ﾔ"]%space @6-36-46-34-23
 noback context `["ﾕ"]%space @6-36-46-346-23
 noback context `["ﾖ"]%space @6-36-46-345-23
-
 noback context `["ﾗ"]%space @6-36-46-15-23
 noback context `["ﾘ"]%space @6-36-46-125-23
 noback context `["ﾙ"]%space @6-36-46-145-23
 noback context `["ﾚ"]%space @6-36-46-1245-23
 noback context `["ﾛ"]%space @6-36-46-245-23
-
 noback context `["ﾜ"]%space @6-36-46-3-23
 noback context `["ｦ"]%space @6-36-46-35-23
 noback context `["ﾝ"]%space @6-36-46-356-23
-
 noback context `["ｱ"]%hiragana @6-36-46-1-23
 noback context `["ｲ"]%hiragana @6-36-46-12-23
 noback context `["ｳ"]%hiragana @6-36-46-14-23
@@ -8616,7 +8524,6 @@ noback context `["ｷﾞ"]%hiragana @6-36-46-5-126-23
 noback context `["ｸﾞ"]%hiragana @6-36-46-5-146-23
 noback context `["ｹﾞ"]%hiragana @6-36-46-5-1246-23
 noback context `["ｺﾞ"]%hiragana @6-36-46-5-246-23
-
 noback context `["ｻ"]%hiragana @6-36-46-156-23
 noback context `["ｼ"]%hiragana @6-36-46-1256-23
 noback context `["ｽ"]%hiragana @6-36-46-1456-23
@@ -8627,7 +8534,6 @@ noback context `["ｼﾞ"]%hiragana @6-36-46-5-1256-23
 noback context `["ｽﾞ"]%hiragana @6-36-46-5-1456-23
 noback context `["ｾﾞ"]%hiragana @6-36-46-5-12456-23
 noback context `["ｿﾞ"]%hiragana @6-36-46-5-2456-23
-
 noback context `["ﾀ"]%hiragana @6-36-46-153-23
 noback context `["ﾁ"]%hiragana @6-36-46-1235-23
 noback context `["ﾂ"]%hiragana @6-36-46-1345-23
@@ -8638,13 +8544,11 @@ noback context `["ﾁﾞ"]%hiragana @6-36-46-5-1235-23
 noback context `["ﾂﾞ"]%hiragana @6-36-46-5-1345-23
 noback context `["ﾃﾞ"]%hiragana @6-36-46-5-12345-23
 noback context `["ﾄﾞ"]%hiragana @6-36-46-5-2345-23
-
 noback context `["ﾅ"]%hiragana @6-36-46-13-23
 noback context `["ﾆ"]%hiragana @6-36-46-123-23
 noback context `["ﾇ"]%hiragana @6-36-46-134-23
 noback context `["ﾈ"]%hiragana @6-36-46-1234-23
 noback context `["ﾉ"]%hiragana @6-36-46-234-23
-
 noback context `["ﾊ"]%hiragana @6-36-46-136-23
 noback context `["ﾋ"]%hiragana @6-36-46-1236-23
 noback context `["ﾌ"]%hiragana @6-36-46-1346-23
@@ -8660,27 +8564,22 @@ noback context `["ﾋﾟ"]%hiragana @6-36-46-6-1236-23
 noback context `["ﾌﾟ"]%hiragana @6-36-46-6-1346-23
 noback context `["ﾍﾟ"]%hiragana @6-36-46-6-12346-23
 noback context `["ﾎﾟ"]%hiragana @6-36-46-6-2346-23
-
 noback context `["ﾏ"]%hiragana @6-36-46-1356-23
 noback context `["ﾐ"]%hiragana @6-36-46-12356-23
 noback context `["ﾑ"]%hiragana @6-36-46-13456-23
 noback context `["ﾒ"]%hiragana @6-36-46-123456-23
 noback context `["ﾓ"]%hiragana @6-36-46-23456-23
-
 noback context `["ﾔ"]%hiragana @6-36-46-34-23
 noback context `["ﾕ"]%hiragana @6-36-46-346-23
 noback context `["ﾖ"]%hiragana @6-36-46-345-23
-
 noback context `["ﾗ"]%hiragana @6-36-46-15-23
 noback context `["ﾘ"]%hiragana @6-36-46-125-23
 noback context `["ﾙ"]%hiragana @6-36-46-145-23
 noback context `["ﾚ"]%hiragana @6-36-46-1245-23
 noback context `["ﾛ"]%hiragana @6-36-46-245-23
-
 noback context `["ﾜ"]%hiragana @6-36-46-3-23
 noback context `["ｦ"]%hiragana @6-36-46-35-23
 noback context `["ﾝ"]%hiragana @6-36-46-356-23
-
 noback context ["ｳｨ"]%hiragana @26-12-23
 noback context ["ｳｪ"]%hiragana @26-124-23
 noback context ["ｳｫ"]%hiragana @26-24-23
@@ -8706,7 +8605,6 @@ noback context ["ｼﾞｭ"]~ @45-1456-23
 noback context ["ｼﾞｮ"]~ @45-2456-23
 noback context ["ｼｪ"]~ @4-12456-23
 noback context ["ｼﾞｪ"]~ @45-12456-23
-
 noback context ["ﾁｬ"]%hiragana @4-135-23
 noback context ["ﾁｭ"]%hiragana @4-1345-23
 noback context ["ﾁｮ"]%hiragana @4-2345-23
@@ -8723,29 +8621,24 @@ noback context ["ﾃｨ"]~ @4-1235-23
 noback context ["ﾃﾞｨ"]~ @45-1235-23
 noback context ["ﾄｩ"]~ @26-1345-23
 noback context ["ﾄﾞｩ"]~ @256-1345-23
-
 noback context ["ﾆｬ"]%hiragana @4-13-23
 noback context ["ﾆｭ"]%hiragana @4-134-23
 noback context ["ﾆｮ"]%hiragana @4-234-23
 noback context ["ﾆｬ"]~ @4-13-23
 noback context ["ﾆｭ"]~ @4-134-23
 noback context ["ﾆｮ"]~ @4-234-23
-
 noback context ["ﾋｬ"]%hiragana @4-136-23
 noback context ["ﾋｭ"]%hiragana @4-1346-23
 noback context ["ﾋｮ"]%hiragana @4-2346-23
 noback context ["ﾋｬ"]~ @4-136-23
 noback context ["ﾋｭ"]~ @4-1346-23
 noback context ["ﾋｮ"]~ @4-2346-23
-
 noback context `["ﾌｧ"]~ @26-136-23
 noback context ["ﾌｧ"]%hiragana @26-136-23
 noback context `["ﾌｨ"]~ @26-1236-23
 noback context ["ﾌｨ"]%hiragana @26-1236-23
-
 noback context `["ﾌｫ"]~ @26-2346-23
 noback context ["ﾌｫ"]%hiragana @26-2346-23
-
 noback context `[]%hankakukatakana @6-36-46
 noback context %hankakukatakana[]~ @23
 noback context %hankakukatakana[]!%hankakukatakana @23

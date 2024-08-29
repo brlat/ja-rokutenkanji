@@ -203,7 +203,7 @@ lowercase ｙ 14536
 lowercase ｚ 1536
 lowercase \x02b1 46-1 α Alpha
 lowercase \x02b1 46-12 β Beta
-lowercase \x02b2 46-1245 γ Gamma
+#lowercase \x02b2 46-1245 γ Gamma
 lowercase \x02b4 46-145 δ Delta
 lowercase \x02b4 46-15 ε Epsilon
 lowercase \x02b5 46-1356 ζ Zeta
@@ -278,7 +278,7 @@ lowercase \x00ec 45-16-24 ì
 lowercase \x00ed 45-34-24 í
 lowercase \x00ee 45-146-24 î
 lowercase \x00ef 45-25-24 ï
-lowercase \x00f0 3456-1246 ð
+#lowercase \x00f0 3456-1246 ð
 lowercase \x00f1 45-12456-1345 ñ
 #lowercase \x00f1 45-16-135 ò
 #lowercase \x00f2 45-34-135 ó
@@ -313,7 +313,7 @@ lowercase \x015d 4-346-136 ŭ
 lowercase \x00ff 45-25-13456 ÿ
 lowercase \x011d 3456-13456 ȝ yogh
 lowercase \x00fe 3456-2346 þ thorn
-lowercase \x00f0 3456-1246 ð eth
+#lowercase \x00f0 12456 ð eth
 lowercase \x01bf 3456-2456 ƿ wynn
 sign \x0200 45-16 ̀̀ 
 sign \x0201 45-34 ́ 
@@ -355,7 +355,7 @@ uppercase \x00c5 1-6-45-235-15 Æ capital
 lowercase \x00e5 1-45-235-15 æ lowercase
 uppercase \x0141 135-6-45-235-15 Œ capital
 lowercase \x0142 135-45-235-15 œ ligature
-lowercase \x014b 45-1345 ŋ
+#lowercase \x014b 45-1345 ŋ
 #lowercase \x0149 456-26 ə
 sign \x01d6 4-346 ˘ uncombining
 sign \x01e5 45-46-14 ˦ high
@@ -473,12 +473,12 @@ sign \x1219 4-126 〈
 sign \x121A 4-345 〉 
 sign \x2006 56-2536 〈 
 sign \x2009 2536-23 〉 
-sign \x14a0 456-1436-123 ■ filled
-sign \x14a1 456-1436-123 □ square
-sign \x14a3 46-1246-3456-145 ▧ shaded
-sign \x14b1 456-1246-3456-14 ▲ filled
-sign \x14b2 1246-3456-14 △ regular
-sign \x14cb 456-1436-123 ○ circle
+#sign \x14a0 456-1436-123 ■ filled
+#sign \x14a1 456-1436-123 □ square
+#sign \x14a3 46-1246-3456-145 ▧ shaded
+#sign \x14b1 456-1246-3456-14 ▲ filled
+#sign \x14b2 1246-3456-14 △ regular
+#sign \x14cb 456-1436-123 ○ circle
 sign \x14cd 46-1246-123456 ◍ shaded
 sign \x19b4 46-245 ⦵ 'normal'
 always !? 253-26-0
@@ -537,7 +537,7 @@ base uppercase Ｙ ｙ
 base uppercase Ｚ ｚ
 base uppercase \x0291 \x02b1 Αα Alpha
 base uppercase \x0291 \x02b1 Ββ Beta
-base uppercase \x0292 \x02b2 Γγ Gamma
+#base uppercase \x0292 \x02b2 Γγ Gamma
 base uppercase \x0294 \x02b4 Δδ Delta
 base uppercase \x0294 \x02b4 Εε Epsilon
 base uppercase \x0295 \x02b5 Ζζ Zeta
@@ -8194,13 +8194,61 @@ sign 頻 456-1236-15 # 頻
 sign 龜 235-1245-126-123456 # 龜
 # end CJK Unified Ideographs
 # begin misc symbols
+# parentheses and dots
 sign ⦅ 5-2356 left white parenthesis
 sign ⦆ 2356-2 right white parenthesis
+sign \x3008 56-2356 〈 open paren
+sign \x3009 2356-23 〉 close paren
 sign ⚷ 0-35-35-0 chiron
 sign ⚸ 0-35-35-0
-sign · 6-0 middle dot
-# end misc symbols
-# begin IPA(International Phonetic Alphabet)
+sign · 5-0 middle dot
+# triangles and arrows
+sign \x14b1 25-25-135 ▲ filled
+sign \x14b2 25-25-135 △ regular
+sign \x25b3 25-25-135 △ triangle
+sign \x25bd 25-25-135 ▽ triangle
+sign \x25b2 25-25-135 ▲ triangle
+sign \x2234 25-25-135 ∴ therefore
+sign \x2235 25-25-135 ∵ because
+sign \x1f53a 25-25-135 🔺 triangle
+sign \x1f53b 25-25-135 🔻 triangle
+sign \x1f53c 25-25-135 🔼 triangle
+sign \x1f53d 25-25-135 🔽 triangle
+sign \x2023 25-25-135 ‣ triangle
+sign \x2207 25-25-135 ∇ triangle
+sign \x25b4 25-25-135 ▴ triangle
+sign \x25b5 25-25-135 ▵ triangle
+sign \x25b7 25-25-135 ▷ triangle
+sign \x25ba 25-25-135 ► triangle
+sign \x25bb 25-25-135 ▻ triangle
+sign \x25c0 246-25-25 ◀ left triangle
+sign \x25c1 246-25-25 ◁ left triangle
+sign \x25b8 25-25-135 ▸ triangle
+sign \x25b9 25-25-135 ▹ triangle
+sign \x25be 25-25-135 ▾ triangle
+sign \x25bf 25-25-135 ▿ triangle
+sign \x25c2 246-25-25 ◂ left triangle
+sign \x25c3 246-25-25 ◃ left triangle
+sign \x25c4 246-25-25 ◄ left triangle
+sign \x25c5 246-25-25 ◅ left triangle
+sign \x25e2 25-25-135 ◢ triangle
+sign \x 25e3 25-25-135 ◣ triangle
+sign \x25e4 25-25-135 ◤ triangle
+sign \x25e5 25-25-135 ◥ triangle
+sign \x21d2 25-25-135 ⇒ right arrow
+sign \x1f503 246-25-25-135 🔃 right arrow
+sign \x21d4 246-25-25-135 ⇔ left and right arrow
+# square and circle
+sign \x14a0 456-1436-123 ■ filled
+sign \x14a1 456-1436-123 □ square
+sign \x14a3 456-1346-123 ▧ shaded
+sign \x25cb 5-1356 ○ circle
+sign \x25ce 456-1346-123 ◎ circle
+sign \x25aa 456-1346-123 ▪ square
+sign \x2611 456-1346-123 ☑ checkbox
+sign \x2756 456-1346-123 ❖ square
+# end misc symbols symbols
+# begin IPA(International Phonetic Alphabet) used in Japan
 sign ː 25 colon
 sign ə 26 shwa
 sign ǽ 456-146
@@ -8210,10 +8258,10 @@ sign è 45-15 e with grave accent
 always ɔ́ 456-126 open o with acute accent
 always ó 456-135 o with acute accent
 sign ʃ 156 esh
-sign ʒ 2346 ezh
+sign \x0292 2346 ʒ ezh
 sign θ 1456 voiceless th sound
-sign ð 12456 voiced th sound
-sign ŋ 1246 eng
+sign \x00f0 12456 ð voiced th sound
+sign \x014b 1246 ŋ eng
 always t̬ 2345
 # end IPA(International Phonetic Alphabet)
 # begin character class rules

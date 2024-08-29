@@ -1,21 +1,72 @@
 # begin misc symbols
+# parentheses and dots
 sign ⦅ 5-2356 left white parenthesis
 sign ⦆ 2356-2 right white parenthesis
-# end misc symbols
+sign \x3008 56-2356 〈 open paren
+sign \x3009 2356-23 〉 close paren
+sign ⚷ 0-35-35-0 chiron
+sign ⚸ 0-35-35-0
+sign · 5-0 middle dot
+# triangles and arrows
+sign \x14b1 25-25-135 ▲ filled
+sign \x14b2 25-25-135 △ regular
+sign \x25b3 25-25-135 △ triangle
+sign \x25bd 25-25-135 ▽ triangle
+sign \x25b2 25-25-135 ▲ triangle
+sign \x2234 25-25-135 ∴ therefore
+sign \x2235 25-25-135 ∵ because
+sign \x1f53a 25-25-135 🔺 triangle
+sign \x1f53b 25-25-135 🔻 triangle
+sign \x1f53c 25-25-135 🔼 triangle
+sign \x1f53d 25-25-135 🔽 triangle
+sign \x2023 25-25-135 ‣ triangle
+sign \x2207 25-25-135 ∇ triangle
+sign \x25b4 25-25-135 ▴ triangle
+sign \x25b5 25-25-135 ▵ triangle
+sign \x25b7 25-25-135 ▷ triangle
+sign \x25ba 25-25-135 ► triangle
+sign \x25bb 25-25-135 ▻ triangle
+sign \x25c0 246-25-25 ◀ left triangle
+sign \x25c1 246-25-25 ◁ left triangle
+sign \x25b8 25-25-135 ▸ triangle
+sign \x25b9 25-25-135 ▹ triangle
+sign \x25be 25-25-135 ▾ triangle
+sign \x25bf 25-25-135 ▿ triangle
+sign \x25c2 246-25-25 ◂ left triangle
+sign \x25c3 246-25-25 ◃ left triangle
+sign \x25c4 246-25-25 ◄ left triangle
+sign \x25c5 246-25-25 ◅ left triangle
+sign \x25e2 25-25-135 ◢ triangle
+sign \x 25e3 25-25-135 ◣ triangle
+sign \x25e4 25-25-135 ◤ triangle
+sign \x25e5 25-25-135 ◥ triangle
+sign \x21d2 25-25-135 ⇒ right arrow
+sign \x1f503 246-25-25-135 🔃 right arrow
+sign \x21d4 246-25-25-135 ⇔ left and right arrow
+# square and circle
+sign \x14a0 456-1436-123 ■ filled
+sign \x14a1 456-1436-123 □ square
+sign \x14a3 456-1346-123 ▧ shaded
+sign \x25cb 5-1356 ○ circle
+sign \x25ce 456-1346-123 ◎ circle
+sign \x25aa 456-1346-123 ▪ square
+sign \x2611 456-1346-123 ☑ checkbox
+sign \x2756 456-1346-123 ❖ square
+# end misc symbols symbols
 
-# begin IPA(International Phonetic Alphabet)
+# begin IPA(International Phonetic Alphabet) used in Japan
 sign ː 25 colon
 sign ə 26 shwa
 sign ǽ 456-146
-sign ʌ́ 456-346 turned v with acute accent
-sign ɑ́ 456-16 alpha with acute accent
+always ʌ́ 456-346 turned v with acute accent
+always ɑ́ 456-16 alpha with acute accent
 sign è 45-15 e with grave accent
-sign ɔ́ 456-126 open o with acute accent
-sign ó 456-135 o with acute accent
+always ɔ́ 456-126 open o with acute accent
+always ó 456-135 o with acute accent
 sign ʃ 156 esh
-sign ʒ 2346 ezh
+sign \x0292 2346 ʒ ezh
 sign θ 1456 voiceless th sound
-sign ð 12456 voiced th sound
-sign ŋ 1246 eng
+sign \x00f0 12456 ð voiced th sound
+sign \x014b 1246 ŋ eng
+always t̬ 2345
 # end IPA(International Phonetic Alphabet)
-

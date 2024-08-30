@@ -8242,8 +8242,8 @@ sign \x21d4 246-25-25-135 ⇔ left and right arrow
 # square and circle
 sign \x14a0 456-1436-123 ■ filled
 sign \x14a1 456-1436-123 □ square
-sign \x14a3 456-1346-123 ▧ shaded
-sign \x25cb 5-1356 ○ circle
+sign \x25a7 456-1346-123 ▧ shaded
+sign \x25cb 456-1346-123 ○ circle
 sign \x25ce 456-1346-123 ◎ circle
 sign \x25aa 456-1346-123 ▪ square
 sign \x2611 456-1346-123 ☑ checkbox

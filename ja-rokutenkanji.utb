@@ -8193,6 +8193,7 @@ sign 響 46-126-1236 # 響
 sign 頻 456-1236-15 # 頻
 sign 龜 235-1245-126-123456 # 龜
 # end CJK Unified Ideographs
+
 # begin misc symbols
 # parentheses and dots
 sign ⦅ 5-2356 left white parenthesis
@@ -8210,10 +8211,10 @@ sign \x25bd 25-25-135 ▽ triangle
 sign \x25b2 25-25-135 ▲ triangle
 sign \x2234 25-25-135 ∴ therefore
 sign \x2235 25-25-135 ∵ because
-sign \x1f53a 25-25-135 🔺 triangle
-sign \x1f53b 25-25-135 🔻 triangle
-sign \x1f53c 25-25-135 🔼 triangle
-sign \x1f53d 25-25-135 🔽 triangle
+sign 🔺 25-25-135 🔺 triangle
+sign 🔻 25-25-135 🔻 triangle
+sign 🔼 25-25-135 🔼 triangle
+sign 🔽 25-25-135 🔽 triangle
 sign \x2023 25-25-135 ‣ triangle
 sign \x2207 25-25-135 ∇ triangle
 sign \x25b4 25-25-135 ▴ triangle
@@ -8232,11 +8233,11 @@ sign \x25c3 246-25-25 ◃ left triangle
 sign \x25c4 246-25-25 ◄ left triangle
 sign \x25c5 246-25-25 ◅ left triangle
 sign \x25e2 25-25-135 ◢ triangle
-sign \x 25e3 25-25-135 ◣ triangle
+sign \x25e3 25-25-135 ◣ triangle
 sign \x25e4 25-25-135 ◤ triangle
 sign \x25e5 25-25-135 ◥ triangle
 sign \x21d2 25-25-135 ⇒ right arrow
-sign \x1f503 246-25-25-135 🔃 right arrow
+sign 🔃 246-25-25-135 🔃 right arrow
 sign \x21d4 246-25-25-135 ⇔ left and right arrow
 # square and circle
 sign \x14a0 456-1436-123 ■ filled
@@ -8248,6 +8249,7 @@ sign \x25aa 456-1346-123 ▪ square
 sign \x2611 456-1346-123 ☑ checkbox
 sign \x2756 456-1346-123 ❖ square
 # end misc symbols symbols
+
 # begin IPA(International Phonetic Alphabet) used in Japan
 sign ː 25 colon
 sign ə 26 shwa
@@ -8264,6 +8266,7 @@ sign \x00f0 12456 ð voiced th sound
 sign \x014b 1246 ŋ eng
 always t̬ 2345
 # end IPA(International Phonetic Alphabet)
+
 # begin character class rules
 attribute katakana アイウエオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモヤユヨラリルレロヮワヰヱヲンヴーヵヶァィゥェォャュョ
 attribute hankakukatakana ｱｲｳｴｵｶｶﾞｷｷﾞｸｸﾞｹｹﾞｺｺﾞｻｻﾞｼｼﾞｽｽﾞｾｾﾞｿｿﾞﾀﾀﾞﾁﾁﾞｯﾂﾂﾞﾃﾃﾞﾄﾄﾞﾅﾆﾇﾈﾉﾊﾊﾞﾊﾟﾋﾋﾞﾋﾟﾌﾌﾞﾌﾟﾍﾍﾞﾍﾟﾎﾎﾞﾎﾟﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛヮﾜヰヱｦﾝｳﾞｰヵヶｧｨｩｪｫｬｭｮ

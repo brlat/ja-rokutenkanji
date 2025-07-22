@@ -8,12 +8,12 @@
 #+grade:1
 #+dots: 6
 #+direction:both
-# copyright (C) 2024, Yoza Kensaku <kanjibrailles@gmail.com>
+# copyright (C) 2024, Yoza Kensaku <ukebear@nirai.ne.jp>
 # Copyright (C) 2024, Kiriake Masanori <seiken@rd01.net>
 #-license: LGPLv2.1
 #-author-name: Yoza Kensaku, Kiriake Masanori
 #-maintainer-name: Yoza Kensaku, Kiriake Masanori
-#-maintainer-email: Yoza Kensaku <kanjibrailles@gmail.com>, Kiriake Masanori <seiken@rd01.net>
+#-maintainer-email: Yoza Kensaku <ukebear@nirai.ne.jp>, Kiriake Masanori <seiken@rd01.net>
 # This file is part of liblouis.
 #
 # liblouis is free software: you can redistribute it and/or modify it

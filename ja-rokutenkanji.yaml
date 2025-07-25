@@ -10,6 +10,107 @@ table:
   dots: 6
 tests:
 
+# Hiragana tests
+# SeiOn and DakuOn  (basic characters)
+# a i u  e o
+  - [あいうえお, ⠁⠃⠉⠋⠊]
+# ka ki ku  ke ko
+  - [かきくけこ, ⠡⠣⠩⠫⠪]
+# sa shi su  se so
+  - [さしすせそ, ⠱⠳⠹⠻⠺]
+# ta chi tsu  te to
+  - [たちつてと, ⠕⠗⠝⠟⠞]
+# na ni nu  ne no
+  - [なにぬねの, ⠅⠇⠍⠏⠎]
+# ha hi fu  he ho
+  - [はひふへほ, ⠥⠧⠭⠯⠮]
+# ma mi mu  me mo
+  - [まみむめも, ⠵⠷⠽⠿⠾]
+# ya yu yo
+  - [やゆよ, ⠌⠬⠜]
+# ra ri ru  re ro
+  - [らりるれろ, ⠑⠓⠙⠛⠚]
+# wa wo n
+  - [わをん, ⠄⠔⠴]
+# DakuOn (Voiced consonant)
+# ga gi gu  ge go
+  - [がぎぐげご, ⠐⠡⠐⠣⠐⠩⠐⠫⠐⠪]
+# za zi zu  ze zo
+  - [ざじずぜぞ, ⠐⠱⠐⠳⠐⠹⠐⠻⠐⠺]
+# da ji zu  de do
+  - [だぢづでど, ⠐⠕⠐⠗⠐⠝⠐⠟⠐⠞]
+# ba bi bu  be bo
+  - [ばびぶべぼ, ⠐⠥⠐⠧⠐⠭⠐⠯⠐⠮]
+# pa pi pu  pe po
+  - [ぱぴぷぺぽ, ⠠⠥⠠⠧⠠⠭⠠⠯⠠⠮]
+# small Hiragana
+# (small) a i  u e o ya yu yo
+  - [っぁぃぅぇぉゃゅょ, ⠂⠘⠁⠘⠃⠘⠉⠘⠋⠘⠊⠘⠌⠘⠬⠘⠜]
+# YoOn (contracted sound)
+# kya kyu kyo
+  - [きゃきゅきょ, ⠈⠡⠈⠩⠈⠪]
+# sha shu sho
+  - [しゃしゅしょ, ⠈⠱⠈⠹⠈⠺]
+# cha chu cho
+  - [ちゃちゅちょ, ⠈⠕⠈⠝⠈⠞]
+# nya nyu nyo
+  - [にゃにゅにょ, ⠈⠅⠈⠍⠈⠎]
+# hya hyu hyo
+  - [ひゃひゅひょ, ⠈⠥⠈⠭⠈⠮]
+# mya myu myo
+  - [みゃみゅみょ, ⠈⠵⠈⠽⠈⠾]
+# rya ryu ryo
+  - [りゃりゅりょ, ⠈⠑⠈⠙⠈⠚]
+# gya gyu gyo
+  - [ぎゃぎゅぎょ, ⠘⠡⠘⠩⠘⠪]
+# ja ju jo
+  - [じゃじゅじょ, ⠘⠱⠘⠹⠘⠺]
+# ja ju jo
+  - [ぢゃぢゅぢょ, ⠘⠕⠘⠝⠘⠞]
+# bya byu byo
+  - [びゃびゅびょ, ⠘⠥⠘⠭⠘⠮]
+# pya pyu pyo
+  - [ぴゃぴゅぴょ, ⠨⠥⠨⠭⠨⠮]
+# (tea) (too)
+  - [てぃとぅ, ⠈⠗⠢⠝]
+
+# Katakana tests
+# Katakana characters are  indicated with begin-Katakana sign dots6 3-6 and end-Katakana sign dots2-3
+# SeiOn and DakuOn  (basic characters)
+  - [アイウエオ, ⠠⠤⠁⠃⠉⠋⠊⠆]
+  - [カキクケコ, ⠠⠤⠡⠣⠩⠫⠪⠆]
+  - [サシスセソ, ⠠⠤⠱⠳⠹⠻⠺⠆]
+  - [タチツテト, ⠠⠤⠕⠗⠝⠟⠞⠆]
+  - [ナニヌネノ, ⠠⠤⠅⠇⠍⠏⠎⠆]
+  - [ハヒフヘホ, ⠠⠤⠥⠧⠭⠯⠮⠆]
+  - [マミムメモ, ⠠⠤⠵⠷⠽⠿⠾⠆]
+  - [ヤユヨ, ⠠⠤⠌⠬⠜⠆]
+  - [ラリルレロ, ⠠⠤⠑⠓⠙⠛⠚⠆]
+  - [ワヲン, ⠠⠤⠄⠔⠴⠆]
+# DakuOn (Voiced consonant)
+  - [ガギグゲゴ, ⠠⠤⠐⠡⠐⠣⠐⠩⠐⠫⠐⠪⠆]
+  - [ザジズゼゾ, ⠠⠤⠐⠱⠐⠳⠐⠹⠐⠻⠐⠺⠆]
+  - [ダヂヅデド, ⠠⠤⠐⠕⠐⠗⠐⠝⠐⠟⠐⠞⠆]
+  - [バビブベボ, ⠠⠤⠐⠥⠐⠧⠐⠭⠐⠯⠐⠮⠆]
+  - [パピプペポ, ⠠⠤⠠⠥⠠⠧⠠⠭⠠⠯⠠⠮⠆]
+# small Katakana
+  - [ッァィゥェォャュョ, ⠠⠤⠂⠘⠁⠘⠃⠘⠉⠘⠋⠘⠊⠘⠌⠘⠬⠘⠜⠆]
+# YoOn (contracted sound)
+  - [キャキュキョ, ⠠⠤⠈⠡⠈⠩⠈⠪⠆]
+  - [シャシュショ, ⠠⠤⠈⠱⠈⠹⠈⠺⠆]
+  - [チャチュチョ, ⠠⠤⠈⠕⠈⠝⠈⠞⠆]
+  - [ニャニュニョ, ⠠⠤⠈⠅⠈⠍⠈⠎⠆]
+  - [ヒャヒュヒョ, ⠠⠤⠈⠥⠈⠭⠈⠮⠆]
+  - [ミャミュミョ, ⠠⠤⠈⠵⠈⠽⠈⠾⠆]
+  - [リャリュリョ, ⠠⠤⠈⠑⠈⠙⠈⠚⠆]
+  - [ギャギュギョ, ⠠⠤⠘⠡⠘⠩⠘⠪⠆]
+  - [ジャジュジョ, ⠠⠤⠘⠱⠘⠹⠘⠺⠆]
+  - [ヂャヂュヂョ, ⠠⠤⠘⠕⠘⠝⠘⠞⠆]
+  - [ビャビュビョ, ⠠⠤⠘⠥⠘⠭⠘⠮⠆]
+  - [ピャピュピョ, ⠠⠤⠨⠥⠨⠭⠨⠮⠆]
+  - [ティトゥ, ⠠⠤⠈⠗⠢⠝⠆]
+
+
 # Kanji tests
   - [亜, ⠠⠁⠃]
   - [唖, ⠠⠁⠚]
